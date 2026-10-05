@@ -8,6 +8,7 @@
 
 把手机端「懒人听书」App 的加密缓存，一键解密、批量转码成可直接播放的真 MP3
 
+[![Release](https://img.shields.io/github/v/release/Popfirer/lrts-to-mp3?label=Download&color=brightgreen)](https://github.com/Popfirer/lrts-to-mp3/releases/latest)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6.svg)](#-环境要求)
 [![GUI](https://img.shields.io/badge/GUI-Tkinter-orange.svg)](#-界面功能)
@@ -110,9 +111,11 @@ pip install pywin32
 
 ### 方式一：使用打包好的 exe（推荐，无需 Python）
 
-1. 下载 `LRTS to mp3.exe`（见 **Releases** 页面）
-2. 双击运行，界面自动打开
-3. 左下勾选小说 → 点「开始转换」
+**👉 [点此下载 `LRTS-to-mp3.exe`](https://github.com/Popfirer/lrts-to-mp3/releases/latest)**（约 22 MB）
+
+1. 双击运行，界面自动打开
+2. USB 连接手机，通知栏把 USB 用途切到「传输文件(MTP)」→ 点「刷新列表」
+3. 勾选小说 → 点「开始转换」
 
 > exe 已内嵌 Python 运行时、tkinter、pywin32、解密工具、使用说明与图标。
 > 唯一的外部依赖是 **ffmpeg**，程序会自动在 `软件目录\tools\`、`软件目录\`、`D:\` 常见位置及 `PATH` 中查找。
