@@ -1,0 +1,19 @@
+# 统一换行符，避免跨平台协作时整文件 diff
+* text=auto eol=lf
+
+# Windows 批处理必须是 CRLF，否则部分环境执行异常
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制文件不做换行转换、不参与文本 diff
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.exe binary
+*.mp3 binary
+
+# 中文文本按 UTF-8 处理
+*.py text working-tree-encoding=UTF-8
+*.md text working-tree-encoding=UTF-8
+*.txt text working-tree-encoding=UTF-8
